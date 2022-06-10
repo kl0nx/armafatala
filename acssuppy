@@ -1,0 +1,10 @@
+getgenv().on = true
+local ohInstance1 = game:GetService("Players"):GetChildren()
+local ohNumber2 = 1
+
+while on do
+    wait()
+    for i,v in pairs(ohInstance1) do
+        game:GetService("ReplicatedStorage").ACS_Engine.Events.Suppression:FireServer(v, ohNumber2)
+    end
+end
