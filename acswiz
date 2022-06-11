@@ -1,1 +1,11 @@
+local ohInstance1 = game:GetService("Players"):GetChildren()
+getgenv().on = true
 
+while on do
+    wait()
+    for i,v in pairs(ohInstance1) do
+        if v ~= game.Players.LocalPlayer then
+           game:GetService("ReplicatedStorage").ACS_Engine.Events.Whizz:FireServer(v)
+        end
+    end
+end
