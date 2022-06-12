@@ -3,9 +3,9 @@ local target = game:GetService('Players').LocalPlayer
 local cFrame = CFrame.new(0,0,0)
 
 local Size = {
-   X = 9000,
+   X = 19000,
    Y = 1000,
-   Z = 9000
+   Z = 19000
 }
 
 for _,v in next, game.ReplicatedStorage:GetDescendants() do
