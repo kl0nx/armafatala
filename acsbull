@@ -1,0 +1,6 @@
+while true do
+   for i=1,10 do
+   game.ReplicatedStorage.ACS_Engine.Events.ServerBullet:FireServer(Vector3.new(0/0/0),Vector3.new(0/0/0))
+   end
+   task.wait()
+end
